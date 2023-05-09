@@ -16,7 +16,7 @@ app.get("/",(req,res)=>{
 });
 
 app.get("/api",(req,res)=>{
-    res.send("Welcome to the API page");
+    res.json({ message: 'Hello from server!'});
 });
 
 // const apiRouter = require('./routes/api');
