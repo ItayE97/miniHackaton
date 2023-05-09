@@ -5,10 +5,10 @@ import { Button } from "@mui/material";
 function App() {
   const [data, SetData] = useState("");
   const fetchData = ()=>{
-    Axios.get("http://localhost:5000/api").then(
+    Axios.get("http://localhost:5001/api").then(
       (res)=>{
         console.log(res.data)
-        // SetData(res.data[0].excuse)
+        // SetData(res.data.massage)
       }
     )
   }
