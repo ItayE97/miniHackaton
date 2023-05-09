@@ -19,9 +19,12 @@ app.get("/api",(req,res)=>{
     res.json({ message: 'Hello from server!'});
 });
 
+app.post("/api",(req,res)=>{
+    res.json({ message: 'Post request!'});
+});
+
 // const apiRouter = require('./routes/api');
 // app.use('/api', apiRouter);
-
 
 
 function logger(req,res,next){
